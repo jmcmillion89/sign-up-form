@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="left-header">
+                <h1>Odin</h1>
+            </div>
+            <div class="left-footer">
+                <span>Photo by Halie West on Unsplash</span>
+            </div>
+            </div>
+
+        <div class="right">
+            <div class="right-header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br><br>
+                You know you want to.
+                </p>
+            </div>
+            <div class="middle-section">
+            <span>Lets do This!</span>
+            <div class="form-wrapper">
+                <form id="sign-up" action="https://httpbin.org/post" method="post">
+                <div class="form-left">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                </div>
+                <div class="form-right">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="confirm-pwd">Confirm Password</label>
+                    <input type="password" name="confirm-pwd" id="confirm-pwd">
+
+
+                </div>
+                </form>
+            </div>
+            </div>
+            <div class="right-footer">
+                <button form='sign-up' type="submit">Create Account</button>
+                <span>Already have an account? Log in</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
