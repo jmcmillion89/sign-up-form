@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* max-height: 800px; */
 }
 
 .container {
@@ -13,7 +14,7 @@
     flex-direction: column;
     flex: 0 1 auto;
     width: 60%;
-    background: #fffafc;
+    background: #f9fafb;
 }
 
 .left {
@@ -30,6 +31,10 @@
 
 .right-header {
     margin: 18% 5% 5%;
+}
+
+p {
+    font-weight: bold;
 }
 
 .left-header {
@@ -50,10 +55,12 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    opacity: .75;
 }
 
 .middle-section span {
     margin-bottom: 10px;;
+    font-weight: bold;
 }
 
 .left-header h1 {
@@ -103,4 +110,16 @@ form {
 input {
     width: 80%;
     margin-bottom: 5%;
+}
+
+label {
+    font-size: small;
+}
+
+button {
+    background: #596D48;
+    color: white;
+    border: 10px solid #596D48;
+    width: 150px;
+    border-radius: 5px;
 }
