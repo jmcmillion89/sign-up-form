@@ -1,7 +1,13 @@
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+  }
+
 * {
     margin: 0;
     padding: 0;
     /* max-height: 800px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -30,7 +36,7 @@
 }
 
 .right-header {
-    margin: 18% 5% 5%;
+    margin: 18% 15% 5% 5%;
 }
 
 p {
@@ -53,9 +59,10 @@ p {
     text-align: center;
     color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
     opacity: .75;
+    font-size: .7rem;
 }
 
 .middle-section span {
@@ -63,8 +70,14 @@ p {
     font-weight: bold;
 }
 
+.left-header img {
+    height: 80%;
+}
+
 .left-header h1 {
     color: white;
+    font-family: Norse, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
 }
 
 .middle-section {
@@ -76,10 +89,6 @@ p {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
-}
-
-.right-footer {
-    margin-top: 5%;
 }
 
 .form-wrapper {
@@ -110,10 +119,42 @@ form {
 input {
     width: 80%;
     margin-bottom: 5%;
+    border: 1px solid #EEEFF2;
+    border-radius: 4px;
+    background: #FFFEFE;
+    padding: 4px;
+    outline: none;
 }
+
+input:focus {
+    border: 1px solid blue;
+    
+}
+
+input.error {
+    border-color: red;
+  }
 
 label {
     font-size: small;
+}
+
+.right-footer {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.right-footer span {
+    font-size: .8rem;
+}
+
+.right-footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
 }
 
 button {
@@ -122,4 +163,5 @@ button {
     border: 10px solid #596D48;
     width: 150px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
